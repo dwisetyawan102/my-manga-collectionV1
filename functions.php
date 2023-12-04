@@ -21,10 +21,10 @@
     function add($data) {
         global $db;
 
-        $title = $data["title"];
-        $mangaka = $data["mangaka"];
-        $releaseyear = $data["releaseyear"];
-        $cover = $data["cover"];
+        $title = htmlspecialchars($data["title"]);
+        $mangaka = htmlspecialchars($data["mangaka"]);
+        $releaseyear = htmlspecialchars($data["releaseyear"]);
+        $cover = htmlspecialchars($data["cover"]);
 
         $query = "INSERT INTO tbmanga VALUES('', '$title', '$mangaka', '$releaseyear', '$cover')";
 

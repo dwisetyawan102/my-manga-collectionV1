@@ -32,10 +32,10 @@
 
     <form action="" method="post">
         <ul>
-            <li><input type="text" name="title" id="" placeholder="title"></li>
-            <li><input type="text" name="mangaka" id="" placeholder="mangaka"></li>
-            <li><input type="text" name="releaseyear" id="" placeholder="releaseyear"></li>
-            <li><input type="text" name="cover" id="" placeholder="cover"></li>
+            <li><input type="text" name="title" id="" placeholder="title" require></li>
+            <li><input type="text" name="mangaka" id="" placeholder="mangaka" require></li>
+            <li><input type="text" name="releaseyear" id="" placeholder="releaseyear" require></li>
+            <li><input type="text" name="cover" id="" placeholder="cover" require></li>
         </ul>
         <button type="submit" name="submit">Add manga!</button>
     </form>
