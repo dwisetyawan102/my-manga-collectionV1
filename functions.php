@@ -17,4 +17,19 @@
         }
         return $rows;
     }
+
+    function add($data) {
+        global $db;
+
+        $title = $data["title"];
+        $mangaka = $data["mangaka"];
+        $releaseyear = $data["releaseyear"];
+        $cover = $data["cover"];
+
+        $query = "INSERT INTO tbmanga VALUES('', '$title', '$mangaka', '$releaseyear', '$cover')";
+
+        mysqli_query($db, $query);
+
+        return mysqli_affected_rows($db);
+    }
 ?>
